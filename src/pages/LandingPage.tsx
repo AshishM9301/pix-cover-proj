@@ -1,13 +1,12 @@
-import React from "react";
 import LandingPageCategories from "../container/LandingPageCategories/LandingPageCategories";
 import LandingPageVerifiedContainer from "../container/LandingPageCategories/LandingPageVerifiedContainer";
 import LandingPageHiringPage from "../container/LandingPageCategories/LandingPageHiringPage";
 import LandingPageReasons from "../container/LandingPageCategories/LandingPageReasons";
 import LandingPageTalent from "../container/LandingPageCategories/LandingPageTalent";
 
-type Props = {};
+// type Props = {};
 
-function LandingPage({}: Props) {
+function LandingPage() {
   return (
     <>
       <div className="w-full ">

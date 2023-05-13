@@ -6,11 +6,11 @@ import "react-horizontal-scrolling-menu/dist/styles.css";
 import useDrag from "../../features/useDrag";
 import LandingPageCategoryCard from "./LandingPageCategoryCard";
 
-type Props = {};
+// type Props = {};
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
-function LandingPageCategories({}: Props) {
+function LandingPageCategories() {
   const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3];
 
   const { dragStart, dragStop, dragMove, dragging } = useDrag();
@@ -60,19 +60,19 @@ function LandingPageCategories({}: Props) {
   );
 }
 
-function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
-  const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
+// function onWheel(apiObj: scrollVisibilityApiType, ev: React.WheelEvent): void {
+//   const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
 
-  if (isThouchpad) {
-    ev.stopPropagation();
-    return;
-  }
+//   if (isThouchpad) {
+//     ev.stopPropagation();
+//     return;
+//   }
 
-  if (ev.deltaY < 0) {
-    apiObj.scrollNext();
-  } else if (ev.deltaY > 0) {
-    apiObj.scrollPrev();
-  }
-}
+//   if (ev.deltaY < 0) {
+//     apiObj.scrollNext();
+//   } else if (ev.deltaY > 0) {
+//     apiObj.scrollPrev();
+//   }
+// }
 
 export default LandingPageCategories;

@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 
-type Props = {};
+// type Props = {};
 
-function LandingPageTalent({}: Props) {
+function LandingPageTalent() {
   return (
     <div className="py-12 md:py-32 font-avenir">
       <div className="w-full lg:w-[1440px] mx-auto px-12">

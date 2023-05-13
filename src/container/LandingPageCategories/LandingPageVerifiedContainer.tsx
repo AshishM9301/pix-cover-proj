@@ -1,10 +1,10 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+// import React from "react";
 
-type Props = {};
+// type Props = {};
 
-const LandingPageVerifiedContainer = ({}: Props) => {
+const LandingPageVerifiedContainer = () => {
   return (
     <div className="my-6 lg:w-[1440px] mx-auto w-full px-4">
       <div className="flex my-32 lg:flex-row flex-col-reverse">
