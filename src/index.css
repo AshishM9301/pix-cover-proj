@@ -1,0 +1,71 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('./assets/fonts/AvenirLTProLight.otf');
+  font-weight: 300;
+  
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('./assets/fonts/AvenirLTProBook.otf');
+  font-weight: 400;
+  
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('./assets/fonts/AvenirLTProMedium.otf');
+  font-weight: 500;
+  
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('./assets/fonts/AvenirLTProHeavy.otf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('./assets/fonts/AvenirLTProBlack.otf');
+  font-weight: 700;
+}
+
+.font-avenir{
+  font-family: 'Avenir Next LT Pro';
+}
+
+
+.background-img-parallax{
+  background: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80');
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  /* dimensions are important, ensure it is tall enough to scroll */ 
+
+
+  /* you are free to lay out the container items with flexbox or whatever means you wish */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-horizontal-scrolling-menu--wrapper::-webkit-scrollbar, .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .background-img-parallax {
+    background-attachment: scroll;
+  }
+}
+
+
