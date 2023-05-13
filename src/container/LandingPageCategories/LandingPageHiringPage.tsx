@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 
-type Props = {};
+// type Props = {};
 
-function LandingPageHiringPage({}: Props) {
+function LandingPageHiringPage() {
   return (
     <div className="mt-0 md:mt-64 w-full font-avenir">
       <div className="bg-[#f5f5f5] py-32 md:py-52 px-10 ">

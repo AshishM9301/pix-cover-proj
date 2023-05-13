@@ -3,31 +3,32 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-import { useContext, useEffect, useState } from "react";
-import { VisibilityContext } from "react-horizontal-scrolling-menu";
+// import React from "react";
+// import { useContext, useEffect, useState } from "react";
+// import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
-type Props = {};
+// type Props = {};
 
-function LandingPageHeading({}: Props) {
-  const {
-    isFirstItemVisible,
-    scrollPrev: prev,
-    scrollNext,
-    visibleElements,
-    initComplete,
-  } = useContext(VisibilityContext);
+function LandingPageHeading() {
+  // const {
+  //   isFirstItemVisible,
+  //   scrollPrev: prev,
+  //   scrollNext,
+  //   visibleElements,
+  //   initComplete,
+  // } = useContext(VisibilityContext);
 
-  const [disabled, setDisabled] = useState(
-    !initComplete || (initComplete && isFirstItemVisible)
-  );
+  // const [
+  //   // disabled,
+  //   setDisabled,
+  // ] = useState(!initComplete || (initComplete && isFirstItemVisible));
 
-  useEffect(() => {
-    // NOTE: detect if whole component visible
-    if (visibleElements?.length) {
-      setDisabled(isFirstItemVisible);
-    }
-  }, [isFirstItemVisible, visibleElements]);
+  // useEffect(() => {
+  //   // NOTE: detect if whole component visible
+  //   if (visibleElements?.length) {
+  //     setDisabled(isFirstItemVisible);
+  //   }
+  // }, [isFirstItemVisible, visibleElements]);
 
   return (
     <div className="lg:w-[1280px] mx-auto font-avenir">
@@ -41,17 +42,17 @@ function LandingPageHeading({}: Props) {
             <div className="md:justify-end justify-center items-end flex my-4 ">
               <div className="flex items-center space-x-2">
                 <div
-                  onClick={() => {
-                    prev();
-                  }}
+                // onClick={() => {
+                //   prev();
+                // }}
                 >
                   <FontAwesomeIcon icon={faChevronLeft} />
                 </div>
                 <h1 className="text-sm">Drag or click the arrows</h1>
                 <div
-                  onClick={() => {
-                    scrollNext();
-                  }}
+                // onClick={() => {
+                //   scrollNext();
+                // }}
                 >
                   <FontAwesomeIcon icon={faChevronRight} />
                 </div>

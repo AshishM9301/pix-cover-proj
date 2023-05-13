@@ -1,14 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import LandingPageHeading from "./LandingPageHeading";
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import useDrag from "../../features/useDrag";
 import LandingPageCategoryCard from "./LandingPageCategoryCard";
 
 // type Props = {};
 
-type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
+// type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
 
 function LandingPageCategories() {
   const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3];
@@ -16,7 +16,7 @@ function LandingPageCategories() {
   const { dragStart, dragStop, dragMove, dragging } = useDrag();
 
   const handleDrag =
-    ({ scrollContainer }: scrollVisibilityApiType) =>
+    ({ scrollContainer }) =>
     (ev: React.MouseEvent) =>
       dragMove(ev, (posDiff) => {
         if (scrollContainer.current) {
@@ -47,7 +47,7 @@ function LandingPageCategories() {
             onMouseUp={() => dragStop}
             onMouseMove={handleDrag}
           >
-            {data.map((item, index) => (
+            {data.map((index) => (
               <LandingPageCategoryCard
                 handleItemClick={handleItemClick}
                 key={index.toString()}

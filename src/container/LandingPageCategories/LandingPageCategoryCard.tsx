@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
 type LandingPageCategoryCardProps = {
-  handleItemClick?: (itemId: string) => React.MouseEventHandler<HTMLDivElement>;
+  handleItemClick: (itemId) => React.MouseEventHandler<HTMLDivElement>;
 };
 
 const LandingPageCategoryCard: FC<LandingPageCategoryCardProps> = ({
@@ -12,7 +12,7 @@ const LandingPageCategoryCard: FC<LandingPageCategoryCardProps> = ({
   return (
     <div
       className="md:mx-6 mx-2 cursor-default"
-      onClick={handleItemClick()}
+      onClick={(e) => handleItemClick(e)}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >

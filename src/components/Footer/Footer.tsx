@@ -6,11 +6,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
-type Props = {};
+// type Props = {};
 
-function Footer({}: Props) {
+function Footer() {
   return (
     <div className="w-full lg:w-[1440px] mx-auto md:px-12">
       <div className="flex md:text-lg text-[9px] tracking-wider">
