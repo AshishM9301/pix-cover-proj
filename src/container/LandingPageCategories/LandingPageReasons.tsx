@@ -13,7 +13,7 @@ const LandingPageReasons = (props: Props) => {
         </div>
         <div className="flex md:flex-row flex-col mt-12 md:mt-24 space-y-12 md:space-y-0">
           {[1, 2, 3].map((item, index) => (
-            <div className="space-y-4 px-4">
+            <div className="space-y-4 px-4" key={item.toString()}>
               <div className="flex justify-center">
                 <FontAwesomeIcon icon={faUserCircle} size="6x" />
               </div>

@@ -48,7 +48,10 @@ function LandingPageCategories({}: Props) {
             onMouseMove={handleDrag}
           >
             {data.map((item, index) => (
-              <LandingPageCategoryCard handleItemClick={handleItemClick} />
+              <LandingPageCategoryCard
+                handleItemClick={handleItemClick}
+                key={index.toString()}
+              />
             ))}
           </ScrollMenu>
         </div>
