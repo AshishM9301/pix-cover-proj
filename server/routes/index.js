@@ -3,6 +3,14 @@ const router = require("express").Router();
 
 const apiRoutes = require("./api");
 
+router.get("/", (req, res, next) => {
+  return res.json({
+    error: {
+      status: 500,
+      message: "Access not Granted",
+    },
+  });
+});
 router.use("/api", apiRoutes);
 
 router.use("/api", (req, res, next) => {
