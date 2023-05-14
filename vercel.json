@@ -10,10 +10,12 @@
         "use": "@vercel/static"
       }
     ],
-  
+    "buildCommand":"cd client && npm install && npm run build",
+    "outputDirectory":"client/dist",
+    "framework":"vite",
     "rewrites": [
       {
-        "source": "/api/(.*)",
+        "source": "/server/(.*)",
         "destination": "/server/index.js"
       }
     ]
