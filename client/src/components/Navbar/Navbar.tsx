@@ -40,7 +40,7 @@ function Navbar() {
             </h1>
           </Link>
 
-          <div className="hidden md:block mt-4 md:mt-0 py-6 md:py-0 bg-black md:bg-white text-white md:text-black md:mx-12 flex-1">
+          <div className="hidden md:block mt-4 md:mt-0 py-6 md:py-0 bg-black md:bg-transparent text-white md:text-black md:mx-12 flex-1">
             <div className="flex justify-center md:justify-start md:mt-0 items-center text-base tracking-wider font-semibold space-x-5 ">
               <a>
                 <h1 className="uppercase">Find Talent</h1>
